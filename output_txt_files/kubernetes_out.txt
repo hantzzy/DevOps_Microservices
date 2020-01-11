@@ -1,1 +1,23 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops3) ubuntu@ip-172-31-84-236:~/udacity_protect/DevOps_Microservices$ ./run_kubernetes.sh pp-predict
+udacity_container_prediction3: Pulling from hantzy/prediction
+Digest: sha256:4dd0e8edd387b77bd8162cb11f9da24ed586dd0e6212691ec89267959f3fc599
+Status: Image is up to date for hantzy/prediction:udacity_container_prediction3
+docker.io/hantzy/prediction:udacity_container_prediction3
+pod/udacity created
+NAME      READY   STATUS              RESTARTS   AGE
+udacity   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops3) ubuntu@ip-172-31-84-236:~/udacity_protect/DevOps_Microservices$ ./run_kubernetes.sh
+udacity_container_prediction3: Pulling from hantzy/prediction
+Digest: sha256:4dd0e8edd387b77bd8162cb11f9da24ed586dd0e6212691ec89267959f3fc599
+Status: Image is up to date for hantzy/prediction:udacity_container_prediction3
+docker.io/hantzy/prediction:udacity_container_prediction3
+Error from server (AlreadyExists): pods "udacity" already exists
+NAME      READY   STATUS    RESTARTS   AGE
+udacity   1/1     Running   0          13s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+

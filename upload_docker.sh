@@ -6,10 +6,12 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=hantzy/prediction
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-
+docker tag fc9c846eb990  hantzy/prediction:udacity_container_prediction3
 # Step 3:
 # Push image to a docker repository
+docker push hantzy/prediction
